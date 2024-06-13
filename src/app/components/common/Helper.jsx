@@ -10,10 +10,10 @@ import {
 } from "./Icon";
 
 export const SocialIconArray = [
-  { socialIcon: <LinkdinIcon /> },
-  { socialIcon: <DiscordIcon /> },
-  { socialIcon: <TelgramIcon /> },
-  { socialIcon: <TwitterIcon /> },
+  { href: "https://www.linkedin.com", socialIcon: <LinkdinIcon /> },
+  { href: "https://discord.com/", socialIcon: <DiscordIcon /> },
+  { href: "https://telegram.org/", socialIcon: <TelgramIcon /> },
+  { href: "https://x.com/?lang=en", socialIcon: <TwitterIcon /> },
 ];
 export const HeroSocialIconArray = [
   { socialIcon: <HeroLinkdinIcon /> },
@@ -22,7 +22,7 @@ export const HeroSocialIconArray = [
   { socialIcon: <HeroTwitterIcon /> },
 ];
 export const LinkArray = [
-  { Link: "Home" },
+  { hreflink: "#home", Link: "Home" },
   { Link: "Games" },
   { Link: "AI-Platform" },
   { Link: "Team" },

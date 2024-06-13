@@ -12,9 +12,9 @@ const GaliloeSkyNav = () => {
   }
   useEffect(() => {
     if (first) {
-      document.body.classList.add("no-scroll");
+      document.body.classList.add("max-md:overflow-hidden");
     } else {
-      document.body.classList.remove("no-scroll");
+      document.body.classList.remove("max-md:overflow-hidden");
     }
   }, [first]);
 
@@ -57,31 +57,29 @@ const GaliloeSkyNav = () => {
         <div
           className={`${
             first ? "right-0" : "right-[-100%]"
-          } flex  gap-3 sm:gap-6 max-md:w-full max-md:h-full fixed bg-nav-bg max-md:backdrop-blur-[20px] top-0 max-md:pt-[120px] justify-center items-center md:h-unset md:static md:bg-transparent z-40 transition-all ease-linear flex-col md:flex-row duration-300 px-6 md:px-0 `}
+          } flex  gap-3 sm:gap-6 max-md:w-full max-md:h-full fixed max-sm:bg-dark-gray bg-nav-bg max-md:backdrop-blur-[20px] top-0 max-md:pt-[120px] justify-center items-center md:h-unset md:static md:bg-transparent z-40 transition-all ease-linear flex-col md:flex-row duration-300 px-6 md:px-0 `}
         >
           <div className="relative inline-block text-left">
             <Link
               href="#!"
-              className="inline-flex justify-center items-center gap-1 w-full rounded-md shadow-sm font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn focus:outline-none"
+              className="inline-flex justify-center items-center group gap-1 w-full rounded-md shadow-sm font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn focus:outline-none duration-300 hover:text-red-light"
               id="menu-button"
-              aria-expanded="true"
-              aria-haspopup="true"
               onClick={() => setIsOpen(!isOpen)}
             >
               Games
               <ArrowIcon
-                className={`${isOpen ? "rotate-180 duration-300" : ""} `}
+                className={`${isOpen ? "rotate-180 duration-300" : ""}  `}
               />
             </Link>
             {isOpen && (
               <div
-                className="origin-top-right absolute left-0 mt-2 w-[150px] rounded-md shadow-lg bg-red-dark ring-1 ring-black ring-opacity-5 focus:outline-none"
+                className="origin-top-right absolute left-0 mt-2 w-[150px] rounded-md shadow-lg bg-red-dark ring-1 ring-black ring-opacity-5 focus:outline-none "
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
                 tabIndex="-1"
               >
-                <div className="" role="none">
+                <div role="none">
                   <Link
                     href="#"
                     className="text-white-cream-btn block px-4 py-2 text-base font-poppins font-normal leading-normal hover:bg-white hover:text-black-dark duration-300 hover:rounded-t-md"
@@ -115,7 +113,7 @@ const GaliloeSkyNav = () => {
           </div>
           <Link
             href="#!"
-            className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn lg:mr-4"
+            className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn lg:mr-4 duration-300 hover:text-red-light"
           >
             AI-Platform
           </Link>
@@ -130,13 +128,13 @@ const GaliloeSkyNav = () => {
           </Link>
           <Link
             href="#!"
-            className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn lg:ms-4"
+            className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn lg:ms-4 duration-300 hover:text-red-light"
           >
             Team
           </Link>
           <Link
             href="#!"
-            className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn"
+            className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn duration-300 hover:text-red-light"
           >
             Careers
           </Link>

@@ -58,6 +58,7 @@ const HeroSection = () => {
           playsInline
           controls
           className="w-full h-full object-cover"
+          poster="/assets/images/webp/hero-section-bg.webp"
         />
       </div>
       <div className="max-w-[1920px] mx-auto min-h-[600px] sm:min-h-screen md:min-h-[810px] flex-col flex relative z-10 overflow-hidden">

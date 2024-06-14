@@ -16,10 +16,10 @@ export const SocialIconArray = [
   { href: "https://x.com/?lang=en", socialIcon: <TwitterIcon /> },
 ];
 export const HeroSocialIconArray = [
-  { socialIcon: <HeroLinkdinIcon /> },
-  { socialIcon: <HeroDiscordIcon /> },
-  { socialIcon: <HeroTelgramIcon /> },
-  { socialIcon: <HeroTwitterIcon /> },
+  { href: "https://www.linkedin.com", socialIcon: <HeroLinkdinIcon /> },
+  { href: "https://discord.com/", socialIcon: <HeroDiscordIcon /> },
+  { href: "https://telegram.org/", socialIcon: <HeroTelgramIcon /> },
+  { href: "https://x.com/?lang=en", socialIcon: <HeroTwitterIcon /> },
 ];
 export const LinkArray = [
   { hreflink: "#home", Link: "Home" },

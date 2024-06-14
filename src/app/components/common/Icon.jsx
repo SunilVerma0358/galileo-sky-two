@@ -13,9 +13,9 @@ export const ArrowIcon = ({ className }) => {
         className="group-hover:stroke-red-light"
         d="M10.5 1.75L6 6.25L1.5 1.75"
         stroke="#FEFEFE"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

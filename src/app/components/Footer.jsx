@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { LinkArray, SocialIconArray } from "./common/Helper";
 const Footer = () => {
   const [inputData, setInputData] = useState({ Email: "" });
   const [formError, setFormError] = useState({ Email: "" });
+  const [success, setSuccess] = useState(false);
 
   const inputControl = (e) => {
     const { name, value } = e.target;
@@ -16,26 +17,42 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputData);
-    setInputData({ Email: "" });
-    const regex = {
-      Email: /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{16,})$/,
-    };
     const error = {};
+    const regex = {
+      Email: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
+    };
 
     if (!regex.Email.test(inputData.Email)) {
       error.Email = "Email is invalid";
     }
+
     setFormError(error);
 
     if (Object.keys(error).length === 0) {
-      setInputData({ Email: "" });
-      setFormError({ Email: "" });
+      setSuccess(true);
+
+      setInputData({
+        Email: "",
+      });
+      setFormError({
+        Email: "",
+      });
     }
   };
+  useEffect(() => {
+    if (success) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [success]);
 
+  const handlePopupClose = () => {
+    setSuccess(false);
+  };
   return (
-    <div className="max-w-[1920px] mx-auto">
-      <div className="max-w-[1164px] container  pt-12 md:pt-[84px] pb-8 md:pb-[50px]">
+    <div id="footer" className="max-w-[1920px] mx-auto">
+      <div className="max-w-[1164px] container  pt-12 md:pt-[80px] pb-8 md:pb-[45px]">
         <div className="flex flex-row flex-wrap -mx-3">
           <div className=" w-full lg:w-1/2 px-3">
             <Link href="#!" className="max-w-[289px]">
@@ -113,6 +130,27 @@ const Footer = () => {
                     </span>
                   )}
                 </form>
+                {success && (
+                  <>
+                    <div
+                      onClick={handlePopupClose}
+                      className="fixed inset-0 bg-black-dark bg-opacity-50 z-10"
+                    ></div>
+                    <div className="bg-white w-[400px] h-[100px] flex-col flex justify-center items-center px-4 py-3 rounded-md fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[50%] z-20">
+                      <p className="text-black-dark font-semibold text-center">
+                        Form submitted successfully
+                      </p>
+                      <div className="flex items-center justify-center pt-5">
+                        <button
+                          onClick={handlePopupClose}
+                          className="bg-red-dark text-white rounded-lg px-3 py-2"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </>
+                )}
                 <p className="font-poppins font-normal text-sm md:text-base text-black-dark leading-normal max-w-[306px] mt-4">
                   Your email address is very safe with Galileo Sky. You will
                   only receive our gaming updates

@@ -20,8 +20,7 @@ const GaliloeSkyNav = () => {
 
   return (
     <div className="bg-nav-bg shadow-[0px_7px_10.9px_0px_#0000002E] py-[1px]">
-      {" "}
-      <div className="max-w-[861px] container lg:pr-[69px] ">
+      <div className="max-w-[870px] container lg:pr-[69px] ">
         <div className="max-md:flex justify-between items-center md:hidden">
           <Link
             href="#!"
@@ -112,6 +111,7 @@ const GaliloeSkyNav = () => {
             )}
           </div>
           <Link
+            onClick={setopen}
             href="#!"
             className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn lg:mr-4 duration-300 hover:text-red-light"
           >
@@ -127,12 +127,14 @@ const GaliloeSkyNav = () => {
             />
           </Link>
           <Link
+            onClick={setopen}
             href="#!"
             className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn lg:ms-4 duration-300 hover:text-red-light"
           >
             Team
           </Link>
           <Link
+            onClick={setopen}
             href="#!"
             className="font-poppins font-semibold text-sm md:text-base leading-normal text-white-cream-btn duration-300 hover:text-red-light"
           >

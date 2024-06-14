@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       container: { padding: "12px", center: true },
       fontFamily: {
-        poppins: ["Poppins, sans-serif"],
-        inter: ["Inter, sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

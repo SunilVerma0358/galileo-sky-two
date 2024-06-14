@@ -101,7 +101,7 @@ const HeroSection = () => {
           <h1 className="font-open-sans font-normal text-4xl sm:text-5xl lg:text-7xl xl:text-9xxl text-white-cream-btn !leading-[110%] text-center mt-2.5 ">
             BEYOND <span className="text-red-light block">ENTERTAINMENT</span>
           </h1>
-          <p className="font-poppins font-normal text-sm md:text-base text-hero-section-gray leading-normal mt-4 max-w-[700px] mx-auto text-center max-lg:px-3">
+          <p className="font-poppins font-normal text-sm md:text-base text-hero-section-gray leading-normal mt-4 max-w-[800px] mx-auto text-center max-lg:px-3">
             Galileo Sky, founded by industry experts, is redefining the gaming
             landscape. With a blend of groundbreaking technology and immersive
             entertainment, we create world-class gaming experiences and thriving

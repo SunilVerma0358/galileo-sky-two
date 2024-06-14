@@ -89,7 +89,7 @@ const Footer = () => {
                 <p className="font-poppins font-normal text-sm md:text-base text-black-dark leading-normal">
                   Quick Links
                 </p>
-                <ul>
+                <ul className="max-sm:flex max-sm:items-center gap-4 max-sm:flex-wrap">
                   {LinkArray.map((obj, index) => (
                     <li key={index} className="mt-2 md:mt-3">
                       <Link

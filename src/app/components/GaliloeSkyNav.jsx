@@ -56,7 +56,7 @@ const GaliloeSkyNav = () => {
         <div
           className={`${
             first ? "right-0" : "right-[-100%]"
-          } flex  gap-3 sm:gap-6 max-md:w-full max-md:h-full fixed max-sm:bg-dark-gray bg-nav-bg max-md:backdrop-blur-[20px] top-0 max-md:pt-[120px] justify-center items-center md:h-unset md:static md:bg-transparent z-[50] transition-all ease-linear flex-col md:flex-row duration-300 px-6 md:px-0 `}
+          } flex  gap-3 sm:gap-6 max-md:w-full max-md:h-full fixed max-sm:bg-dark-gray bg-nav-bg max-md:backdrop-blur-[20px] top-0 max-md:pt-[120px] justify-center items-center md:h-unset md:static md:bg-transparent z-[40] transition-all ease-linear flex-col md:flex-row duration-300 px-6 md:px-0 `}
         >
           <div className="relative inline-block text-left">
             <Link

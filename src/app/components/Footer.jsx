@@ -52,7 +52,7 @@ const Footer = () => {
   };
   return (
     <div id="footer" className="max-w-[1920px] mx-auto">
-      <div className="max-w-[1164px] container  pt-12 md:pt-[80px] pb-8 md:pb-[45px]">
+      <div className="max-w-[1164px] container  pt-12 md:pt-[81px] pb-8 md:pb-[46px]">
         <div className="flex flex-row flex-wrap -mx-3">
           <div className=" w-full lg:w-1/2 px-3">
             <Link href="#!" className="max-w-[289px]">
@@ -64,7 +64,7 @@ const Footer = () => {
                 alt="logo"
               />
             </Link>
-            <p className="font-poppins font-normal text-sm md:text-base text-dark-gray leading-normal mt-4 max-w-[406px]">
+            <p className="font-poppins font-normal text-sm md:text-base text-dark-gray leading-normal mt-4 sm:max-w-[450px]">
               Galileo Sky, founded by industry experts, is redefining the gaming
               landscape. With a blend of groundbreaking technology and immersive
               entertainment, we create world-class gaming experiences and
@@ -151,7 +151,7 @@ const Footer = () => {
                     </div>
                   </>
                 )}
-                <p className="font-poppins font-normal text-sm md:text-base text-black-dark leading-normal max-w-[306px] mt-4">
+                <p className="font-poppins font-normal text-sm md:text-base text-black-dark leading-normal sm:max-w-[306px] mt-4">
                   Your email address is very safe with Galileo Sky. You will
                   only receive our gaming updates
                 </p>

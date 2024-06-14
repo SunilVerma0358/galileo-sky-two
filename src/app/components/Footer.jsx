@@ -51,7 +51,7 @@ const Footer = () => {
     setSuccess(false);
   };
   return (
-    <div id="footer" className="max-w-[1920px] mx-auto">
+    <div id="footer" className="max-w-[1920px] bg-white mx-auto">
       <div className="max-w-[1164px] container  pt-12 md:pt-[81px] pb-8 md:pb-[46px]">
         <div className="flex flex-row flex-wrap -mx-3">
           <div className=" w-full lg:w-1/2 px-3">

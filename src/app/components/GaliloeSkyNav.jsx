@@ -56,7 +56,7 @@ const GaliloeSkyNav = () => {
         <div
           className={`${
             first ? "right-0" : "right-[-100%]"
-          } flex  gap-3 sm:gap-6 max-md:w-full max-md:h-full fixed max-sm:bg-dark-gray bg-nav-bg max-md:backdrop-blur-[20px] top-0 max-md:pt-[120px] justify-center items-center md:h-unset md:static md:bg-transparent z-40 transition-all ease-linear flex-col md:flex-row duration-300 px-6 md:px-0 `}
+          } flex  gap-3 sm:gap-6 max-md:w-full max-md:h-full fixed max-sm:bg-dark-gray bg-nav-bg max-md:backdrop-blur-[20px] top-0 max-md:pt-[120px] justify-center items-center md:h-unset md:static md:bg-transparent z-[50] transition-all ease-linear flex-col md:flex-row duration-300 px-6 md:px-0 `}
         >
           <div className="relative inline-block text-left">
             <Link
@@ -72,7 +72,7 @@ const GaliloeSkyNav = () => {
             </Link>
             {isOpen && (
               <div
-                className="origin-top-right absolute left-0 mt-2 w-[150px] rounded-md shadow-lg bg-red-dark ring-1 ring-black ring-opacity-5 focus:outline-none "
+                className="origin-top-right absolute left-0 mt-2 w-[150px] rounded-md shadow-lg bg-red-dark ring-1 ring-black ring-opacity-5 focus:outline-none z-10 "
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"

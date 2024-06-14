@@ -61,14 +61,14 @@ const HeroSection = () => {
           poster="/assets/images/webp/hero-section-bg.webp"
         />
       </div>
-      <div className="max-w-[1920px] mx-auto min-h-[600px] sm:min-h-screen md:min-h-[810px] flex-col flex relative z-10 overflow-hidden">
+      <div className="max-w-[1920px] mx-auto min-h-[600px] md:min-h-[810px] flex-col flex relative z-10 overflow-hidden">
         <>
           <GaliloeSkyNav />
         </>
         <div
           className={`${
             sidebar ? "max-md:right-0" : ""
-          } absolute z-20 max-md:-right-20 duration-300 md:right-0 top-[21%] md:top-[30%] w-20 h-[368px] bg-nav-bg backdrop:blur-[30.92px] flex justify-center py-[70px] px-[22px] flex-col-reverse gap-7 `}
+          } absolute z-20 max-md:-right-20 duration-300 md:right-0 top-[21%] md:top-[30%] w-20 h-[368px] bg-nav-bg backdrop-blur-[4px] flex justify-center py-[70px] px-[22px] flex-col-reverse gap-7 `}
         >
           <span
             className="bg-white absolute top-[30%] -left-[15px] w-[15px] h-[145px] rounded-[30px_0_0_30px]"
@@ -94,11 +94,11 @@ const HeroSection = () => {
               src="/assets/images/webp/futurebtn.webp"
               alt="future"
             />
-            <span className=" absolute left-0 right-0 top-[11.49px] font-inter font-medium text-sm text-white-cream-btn duration-300 group-hover:text-red-light uppercase">
+            <span className="absolute left-0 right-0 top-[11.49px] font-inter font-medium text-sm text-white-cream-btn duration-300 group-hover:text-red-light uppercase">
               Future of Gaming
             </span>
           </button>
-          <h1 className="font-open-sans font-normal text-4xl sm:text-5xl lg:text-7xl xl:text-9xxl text-white-cream-btn !leading-[110%] text-center mt-2.5 ">
+          <h1 className="font-open-sans font-normal text-4xl sm:text-5xl lg:text-7xl xl:text-9xxl text-white-cream-btn !leading-[110%] text-center mt-2.5">
             BEYOND <span className="text-red-light block">ENTERTAINMENT</span>
           </h1>
           <p className="font-poppins font-normal text-sm md:text-base text-hero-section-gray leading-normal mt-4 max-w-[800px] mx-auto text-center max-lg:px-3">
@@ -107,14 +107,14 @@ const HeroSection = () => {
             entertainment, we create world-class gaming experiences and thriving
             digital economies that captivate and inspire
           </p>
-          <div className="flex md:flex-col items-center gap-3 md:gap-7 h-20 absolute max-md:justify-center md:left-0 max-md:bottom-[20%] md:top-[38%] translate-y-[50%]">
+          <div className="flex md:flex-col items-center gap-3 md:gap-7 h-20 absolute max-md:justify-center md:left-0 max-[400px]:bottom-[15%] max-md:bottom-[20%] md:top-[38%] translate-y-[50%]">
             {videos.map((_, index) => (
               <span
                 key={index}
                 className={`w-5 h-2 rounded-[21px] ${
                   index === presentVideo
                     ? "bg-red-light !w-[47px]"
-                    : "bg-input-gray "
+                    : "bg-input-gray"
                 } md:rotate-90 cursor-pointer`}
                 onClick={() => handleDotClick(index)}
               ></span>
@@ -125,7 +125,7 @@ const HeroSection = () => {
           <Link
             href="#footer"
             onClick={handleToggle}
-            className="w-[76px] h-[43px] border border-red-light rounded-[55px] rotate-90 relative cursor-pointer transition-colors duration-300 block "
+            className="w-[76px] h-[43px] border border-red-light rounded-[55px] rotate-90 relative cursor-pointer transition-colors duration-300 block"
           >
             <span
               className={`w-[27px] h-[27px] rounded-full bg-red-light absolute transition-transform duration-300 block  

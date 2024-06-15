@@ -50,7 +50,7 @@ const HeroSection = () => {
   };
   return (
     <div id="home" className="relative z-10">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 max-w-[1920px] mx-auto">
         <video
           id="bg-video"
           muted
